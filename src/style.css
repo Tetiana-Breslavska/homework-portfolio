@@ -4,11 +4,6 @@
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
-/* body {
-  margin: 0 auto;
-  max-width: 800px;
-} */
-
 h1,
 h2,
 h3 {
@@ -32,17 +27,20 @@ h3 {
 
 p {
   padding: 20px;
-  border-radius: 4px;
   font-size: 18px;
   line-height: 1.5;
   text-align: center;
+}
+
+.title {
+  margin-top: 60px;
 }
 
 .flag {
   width: 30px;
 }
 
-.navbar{
+.navbar {
   width: 100%;
   position: fixed;
   top:0;
@@ -69,16 +67,18 @@ p {
   text-align: center;
 }
 
-.button:hover{
+.button:hover {
   scale: 1.05;
-  
 }
 
 .contact-link {
   background: none;
   color: var(--primary-color);
   border: 1px solid var(--primary-color);
-  
+}
+
+.app-descr-text {
+  text-align: start;
 }
 
 .launch-button {
@@ -91,15 +91,13 @@ p {
   background:#F5F2FE;
   display: flex;
   justify-content: center;
-  
 }
 
-.project-image{
+.project-image {
   width: 100%;
   border-radius: 4px;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
   align-self: center;
-
 } 
 
 .revers{
@@ -107,7 +105,8 @@ p {
 }
 
 .email-link {
-  display: flex;
+  display: block;
+  text-align: center;
   justify-content: center;
   color: var(--primary-color);
   font-size: 28px;
@@ -116,4 +115,36 @@ p {
 
 .email-link:hover {
   text-decoration: underline;
+}
+
+.img-mail-box {
+  font-size: 28px;
+}
+
+@media (max-width: 575px){
+  h2{
+    font-size: 32px;
+  }
+
+  h1{
+    font-size: 56px;
+    line-height: 58px;
+  }
+
+  h3{
+    
+    font-size: 16px;
+  }
+  
+  .launch-button{
+    width: 65%;
+  }
+
+  .email-link{
+    font-size:16px;
+  }
+
+  .app-descr-text{
+    text-align: justify;
+  }
 }
