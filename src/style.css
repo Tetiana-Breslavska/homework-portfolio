@@ -1,56 +1,47 @@
 :root {
-  --primary-color: #6c63ff;
+  --primary-color: #9b98d4;
   --secondary-color: #f5f2fe;
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
-h1,
-h2,
-h3 {
-  text-align: center;
-  margin: 0;
+body{
+  background-color: rgb(219, 208, 221);
+  /* line-height: 1; */
 }
 
-h1 {
+h1{
   font-size: 96px;
 }
 
-h2 {
+h2{
   font-size: 48px;
-  margin-top: 60px;
-}
-
-h3 {
-  font-size: 24px;
-  color: rgb(155, 154, 154);
+  text-align: center;
 }
 
 p {
   padding: 20px;
-  font-size: 18px;
-  line-height: 1.5;
+  font-size: 20px;
   text-align: center;
 }
 
-.title {
-  margin-top: 60px;
+.header{
+  font-size: 48px;
+  text-align: center;
+  margin: 60px 0 80px ;
+}
+
+.header .button {
+  font-size: 24px;
+}
+
+.profession{
+  font-size: 28px;
+  color: rgb(155, 154, 154);
 }
 
 .flag {
-  width: 30px;
-}
-
-.navbar {
-  width: 100%;
-  position: fixed;
-  top:0;
-  
-}
-
-.navigation-links {
-  display: flex;
-  margin-top: 40px;
-  justify-content: center;
+  width: 40px;
+  margin-top: 15px;
 }
 
 .button {
@@ -69,12 +60,7 @@ p {
 
 .button:hover {
   scale: 1.05;
-}
-
-.contact-link {
-  background: none;
-  color: var(--primary-color);
-  border: 1px solid var(--primary-color);
+  background-color: #6b67c5;
 }
 
 .app-descr-text {
@@ -104,21 +90,16 @@ p {
   flex-direction: row-reverse;
 }
 
-.email-link {
-  display: block;
-  text-align: center;
-  justify-content: center;
+.contact-links {
   color: var(--primary-color);
   font-size: 28px;
   text-decoration: none;
+  margin-right: 20px;
+
 }
 
-.email-link:hover {
-  text-decoration: underline;
-}
-
-.img-mail-box {
-  font-size: 28px;
+.contact-links:hover {
+  color: #6b67c5;
 }
 
 @media (max-width: 575px){
@@ -131,17 +112,13 @@ p {
     line-height: 58px;
   }
 
-  h3{
-    
-    font-size: 16px;
-  }
-  
-  .launch-button{
-    width: 65%;
+  .profession{
+    font-size: 20px;
+    line-height: 24px;
   }
 
-  .email-link{
-    font-size:16px;
+  .launch-button{
+    width: 65%;
   }
 
   .app-descr-text{
